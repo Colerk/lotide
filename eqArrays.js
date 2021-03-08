@@ -1,13 +1,14 @@
-const eqArrays = function(arr1, arr2) {
-  let current = true
-  if (current) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        current = false
+const eqArrays = function(listOne, listTwo) {
+  if (listOne.length === listTwo.length) {
+    for (let i = 0; i < listOne.length; i++) {
+      if (listOne[i] !== listTwo[i]) {
+        return false;
       }
     }
+    return true;
+  } else {
+    return false;
   }
-  return current
-}
+};
 
 module.exports = eqArrays;
