@@ -6,7 +6,7 @@ const assert = require('chai').assert;
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 
-describe("head function", () => {
+describe("tail function", () => {
   it("returns 2 for [Yo Yo, Lighthouse, Labs]", () => {
     assert.strictEqual(tail(words), 2);
   });

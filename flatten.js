@@ -1,6 +1,5 @@
-let flat = []
-
 const flatten = function(arr) {
+  let flat = []
   for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
       for (let j = 0; j < arr[i].length; j++) {
@@ -13,4 +12,6 @@ const flatten = function(arr) {
   return flat;
 }
 
-console.log(flatten([1, 2, [3, 4], 5, [6]]))
+module.exports = flatten;
+
+// console.log(flatten([1, 2, [3, 4], 5, [6]]))

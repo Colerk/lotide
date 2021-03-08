@@ -1,6 +1,6 @@
 
-const words = ["pizza", "is ", "good"];
-const answer = ['p', 'i', 'g']
+// const words = ["pizza", "is ", "good"];
+// const answer = ['p', 'i', 'g']
 
 const map = function(array, callback) {
   const results = [];
@@ -10,25 +10,10 @@ const map = function(array, callback) {
   return results;
 }
 
+module.exports = map;
 
-const results1 = map(words, word => word[0])
-
-const assertArraysEqual = function(arr1, arr2) {
-  let current = true;
-  for (let i = 0; i < arr1.length; i++) {
-    if (current) {
-      if (arr1[i] !== arr2[i]) {
-        current = false;
-      }
-    }
-  }
-  if (current) {
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1}  !== ${arr2}`);
-  }
-};
+// const results1 = map(words, word => word[0])
 
 
 
-assertArraysEqual(map(words, word => word[0]), answer)
+// assertArraysEqual(map(words, word => word[0]), answer)
